@@ -1,0 +1,18 @@
+<h1>There are {{ count }} word in your text</h1>
+
+<h1>Your Text</h1>
+{{ fulltext }}
+<br>
+
+<h2><a href="{%url 'home' %}">Back</a></h2>
+
+
+<h2></h2>
+{% for word, countot in swod %}
+{{word}} :
+{{countot}}
+<br>
+
+{% endfor %}
+<!-- {{swod}}
+{{wordlist}} -->
